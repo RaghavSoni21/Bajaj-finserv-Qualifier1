@@ -12,7 +12,7 @@ function App() {
     const handleSubmit = async () => {
         try {
             const parsedInput = JSON.parse(jsonInput);
-            const result = await axios.post('http://localhost:8000/bfhl', parsedInput);  // Backend URL
+            const result = await axios.post('https://bajaj-finserv-qualifier1-backend-3.onrender.com/bfhl', parsedInput);  // Backend URL
             setResponse(result.data);
         } catch (error) {
             alert('Invalid JSON or Error in API call');
